@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/styles/homepage.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="/style.css">
+  <script src="other prefs.js"></script>
+  <title>Profile/Your Next Role</title>
+</head>
+
+
+<body>
+
+
+    <!------------------------ Nav Bar ------------------------------------------->
+    <nav>
+      <div class = "logo-container" >
+      <img src="pictures/glesson-logo.svg" alt="Gleeson Logo">
+      </div>
+
+       <ul>
+        <li>
+          <a class="dropdown-btn" href="#"> Job Seekers <img src="pictures/arrow-down.png"> </a>
+          <ul class="dropdown">
+            <li><a href="#"> Programmer </a></li>
+            <li><a href="#"> Engineers </a></li>
+          </ul>
+        </li>
+       </ul>
+
+
+       <ul>
+        <li>
+          <a class="dropdown-btn" href="#"> Employers <img src="pictures/arrow-down.png"> </a>
+          <ul class="dropdown">
+            <li><a href="#"> Programmer </a></li>
+            <li><a href="#"> Engineers </a></li>
+          </ul>
+        </li>
+       </ul>
+
+
+       <ul>
+        <li>
+          <a class="dropdown-btn" href="#"> Divisions <img src="pictures/arrow-down.png"> </a>
+          <ul class="dropdown">
+            <li><a href="#"> Programmer </a></li>
+            <li><a href="#"> Engineers </a></li>
+          </ul>
+        </li>
+       </ul>
+
+
+        <a class="dropdown-btn" href="#">
+            Talent Talks
+        </a>
+
+
+        <a class="dropdown-btn" href="#">
+            Contact Us
+        </a>
+       
+        <div class="button-container">
+          <button class="profile-btn">
+            <img src="pictures/profile.png" alt="Profile Image">
+            Profile
+          </button>
+        </div>
+       
+    </nav>
+
+
+<!----------------------------------------profile----------------------------------->
+<div class="colored-border-container">
+  <p class="profile">Profile</p>
+</div>
+
+<!---------------------------------------job applications------------------------>
+<div class="rectangle-container">
+  <div class="item">
+    <a href="#" class="link">
+      <img class="icon1" src="pictures/check.png" alt="Icon">
+      <h5>Job applications</h5>
+    </a>
+
+    <a href="#" class="link">
+      <img class="icon1" src="pictures/heart.png" alt="Icon">
+      <h5>Saved jobs</h5>
+    </a>
+
+    <a href="#" class="link">
+      <img class="icon1" src="pictures/bell.png" alt="Icon">
+      <h5>Job alerts</h5>
+    </a>
+
+    <a href="#" class="link">
+      <img class="icon1" src="pictures/details.png" alt="Icon">
+      <h5>Profile details</h5>
+    </a>
+
+    <a href="#" class="link">
+      <img class="icon1" src="pictures/work.png" alt="Icon">
+      <h5>Work preferences</h5>
+    </a>
+
+    <a href="#" class="link">
+      <img class="icon1" src="pictures/documents.png" alt="Icon">
+      <h5>Documents</h5>
+    </a>
+
+    <a href="#" class="link">
+      <img class="icon1" src="pictures/settings.png" alt="Icon">
+      <h5>Account settings</h5>
+    </a>
+  </div>
+</div>
+
+<!----------------------------profile details------------------------------>
+<div class="profile-container">
+  <h2>Work preferences</h2>
+
+  <div class="color-choices">
+    <span class="color-choice" onclick="changeColor('blue')">Your next role</span>
+    <span class="color-choice" onclick="changeColor('blue')">Other preferences</span>
+  </div>
+
+  <!-- Desired Occupations Section -->
+  <div class="search-field">
+    <h5>Desired occupations</h5>
+    <input type="text" id="certifications-search" placeholder="Add all occupations of interest to you">
+    <button class="certifications-button">
+      Mechanical Engineering
+      <span class="icon2">✖</span>
+    </button>
+  </div>
+
+  <!-- Job Type Section -->
+  <div class="job-type-section">
+    <h5>Job type</h5>
+    <div class="job-type-buttons">
+      <label class="checkbox-job-container">
+        <input type="checkbox" class="job-type-checkbox">
+        <span class="checkmark1"></span>Any job type
+      </label>
+    </div>
+  </div>
+
+  <!-- Lower Container with 3 Checkboxes -->
+  <div class="outer_border">
+    <div class="inner_border">
+      <label class="checkbox-container_gov">
+        <input type="checkbox" class="check-checkbox">
+        <span class="checkmark"></span>Full time
+      </label>
+    </div>
+
+    <div class="inner_border">
+      <label class="checkbox-container_gov">
+        <input type="checkbox" class="check-checkbox">
+        <span class="checkmark"></span>Part time
+      </label>
+    </div>
+
+    <div class="inner_border">
+      <label class="checkbox-container_gov">
+        <input type="checkbox" class="check-checkbox">
+        <span class="checkmark"></span>Casual/Holiday
+      </label>
+    </div>
+  </div>
+<!-- Contract type -->
+<div class="contract-type-section">
+  <h5>Contract type</h5>
+  <div class="custom-type-buttons">
+    <label class="custom-checkbox-container">
+      <input type="checkbox" class="custom-type-checkbox">
+      <span class="custom-checkmark1"></span>Any contract type
+    </label>
+  </div>
+</div>
+
+<!-- Lower Container with 5 Custom Checkboxes -->
+<div class="custom-outer_border">
+  <div class="custom-inner_border">
+    <label class="custom-checkbox-container_gov">
+      <input type="checkbox" class="custom-check-checkbox">
+      <span class="custom-checkmark"></span>Permanent
+    </label>
+  </div>
+
+  <div class="custom-inner_border">
+    <label class="custom-checkbox-container_gov">
+      <input type="checkbox" class="custom-check-checkbox">
+      <span class="custom-checkmark"></span>Contract
+    </label>
+  </div>
+
+  <div class="custom-inner_border">
+    <label class="custom-checkbox-container_gov">
+      <input type="checkbox" class="custom-check-checkbox">
+      <span class="custom-checkmark"></span>Temporary
+    </label>
+  </div>
+
+  <div class="custom-inner_border">
+    <label class="custom-checkbox-container_gov">
+      <input type="checkbox" class="custom-check-checkbox">
+      <span class="custom-checkmark"></span>Locum
+    </label>
+  </div>
+
+  <div class="custom-inner_border">
+    <label class="custom-checkbox-container_gov">
+      <input type="checkbox" class="custom-check-checkbox">
+      <span class="custom-checkmark"></span>Volunteer
+    </label>
+  </div>
+
+  <div class="custom-inner_border">
+    <label class="custom-checkbox-container_gov">
+      <input type="checkbox" class="custom-check-checkbox">
+      <span class="custom-checkmark"></span>Internship & Trainee
+    </label>
+  </div>
+
+  <div class="custom-inner_border">
+    <label class="custom-checkbox-container_gov">
+      <input type="checkbox" class="custom-check-checkbox">
+      <span class="custom-checkmark"></span>Freelance & Tasks
+    </label>
+  </div>
+</div>
+
+<!-- Dropdown List 1 -->
+<div class="dropdown-container">
+<div class="dropdown-section">
+  <h5>Work authorisation</h5>
+  <div class="dropdown">
+    <select>
+      <option value="" disabled selected>Australian Citizen / Permanent Res...</option>
+      <option value="anotherOption">Another Option</option>
+    </select>
+    <div class="arrow"></div>
+  </div>
+</div>
+
+<!-- Dropdown List 2 -->
+<div class="dropdown-section">
+  <h5>Career level</h5>
+  <div class="dropdown">
+    <select>
+      <option value="" disabled selected>Senior (Experienced Non-Manager)</option>
+      <option value="anotherOption">Another Option</option>
+    </select>
+    <div class="arrow"></div>
+  </div>
+</div>
+
+<!-- Dropdown List 3 -->
+<div class="dropdown-section">
+  <h5>Desired pay</h5>
+  <div class="dropdown">
+    <select>
+      <option value="" disabled selected>$100,000</option>
+      <option value="anotherOption">Another Option</option>
+    </select>
+    <div class="arrow"></div>
+  </div>
+</div>
+
+<!-- Dropdown List 4 -->
+<div class="dropdown-section">
+  <h5>Availability</h5>
+  <div class="dropdown">
+    <select>
+      <option value="" disabled selected>Select availability</option>
+      <option value="anotherOption">Another Option</option>
+    </select>
+    <div class="arrow"></div>
+  </div>
+</div>
+</div>
+
+<div class="custom-search-field">
+  <h5>Desired work locations</h5>
+  <input type="text" id="custom-search" placeholder="Add all occupations of interest to you">
+  <button class="custom-button">
+    Sydney CBD NSW
+    <span class="custom-icon">✖</span>
+  </button>
+</div>
+</div>
+
+<!----------------------------------------footer------------------------->
+
+<div class="footer">
+  <div class="footer-logo">
+      <img class="footerLogo" src="/pictures/glesson-logo.svg" alt="Gleeson Logo">
+      <h1 class="glee">#workwithglee</h1>
+  </div>
+  
+    <div class="footer-column">
+      <h3>Employers</h3>
+      <a href="#">Why Gleeson?</a>
+      <a href="#">Submit a Vacancy</a>
+    </div>
+    <div class="footer-column">
+      <h3>Job Seekers</h3>
+      <a href="#">Why Gleeson?</a>
+      <a href="#">Latest Jobs</a>
+      <a href="#">Job Alerts</a>
+      <a href="#">Register</a>
+      <a href="#">Login</a>
+      <a href="#">Submit CV</a>
+    </div>
+    <div class="footer-column">
+      <h3>Company</h3>
+      <a href="#">Our Divisions</a>
+      <a href="#">About Us</a>
+      <a href="#">Meet the Team</a>
+      <a href="#">Talent Talks</a>
+    </div>
+    <div class="footer-column">
+      <h3>Resources</h3>
+      <a href="#">Resource Hub</a>
+      <a href="#">Key Information Documentation</a>
+    </div>
+  </div>
+  
+  <div class="footer-line2"></div>
+<div class="centered-text">
+  <a href="#">Terms & Conditions</a>
+  <a href="#">Privacy Policy</a>
+  <a href="#">Cookie Policy</a>
+</div>
+
+<div class="footer-line">
+
+</div>
+<div class="social-icons">
+  <img class="icon" src="pictures/icon-ig.png" alt="Instagram Logo">
+  <img class="icon" src="/pictures/icon-yt.png" alt="YouTube Logo">
+  <img class="icon" src="/pictures/icon-in.png" alt="LinkedIn Logo">
+</div>
+
+<div class="bott">
+<img src="/pictures/bott1.png" class="bott1">
+<img src="/pictures/bott2.png" class="bott2">
+</div>
+
+
+</html>
+</body>
